@@ -4,6 +4,12 @@ The Jules API lets you programmatically access Jules's capabilities to automate 
 
 > **Note:** The Jules API is in an alpha release, which means it is experimental. Be aware that we may change specifications, API keys, and definitions as we work toward stabilization. In the future, we plan to maintain at least one stable and one experimental version.
 
+## MCP Server
+
+This repository provides a Model Context Protocol (MCP) server that wraps the Jules API. The MCP server simplifies interaction with the API by exposing its functionalities as tools that can be easily called using `curl` or other HTTP clients.
+
+For detailed instructions on how to set up and use the MCP server, please refer to the main [README.md](../../README.md) file.
+
 ## Authentication
 
 To get started with the Jules API, you'll need an API key.

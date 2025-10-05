@@ -1,56 +1,17 @@
 # Jules API MCP Server
 
-This is a Model Context Protocol (MCP) server that provides tools to interact with the Jules API.
+This is a Model Context Protocol (MCP) server that provides tools to interact with the Jules API. It acts as a bridge, allowing you to use standard `curl` commands to access the powerful features of the Jules API.
 
-## Setup
+## Documentation
 
-### Local Setup
+For detailed instructions on how to set up and use the MCP server, please refer to the [MCP Server Documentation](docs/mcp_server.md).
 
-1. Install dependencies:
+For more detailed information about the Jules API itself, see the [API Reference](docs/api.md).
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+## Troubleshooting
 
-2. Set the API key:
+If you encounter any issues, please refer to the [Troubleshooting Guide](docs/troubleshooting.md).
 
-   ```bash
-   export JULES_API_KEY=your_api_key_here
-   ```
+## Contributing
 
-3. Run the server:
-
-   ```bash
-   uvicorn server:app --host 0.0.0.0 --port 8000
-   ```
-
-The MCP server will be accessible at `http://localhost:8000/mcp` and the health check at `http://localhost:8000/health`.
-
-### Docker Setup
-
-1. Build the image:
-
-   ```bash
-   docker build -t jules-mcp .
-   ```
-
-2. Run the container:
-
-   ```bash
-   docker run -e JULES_API_KEY=your_api_key_here -p 8000:8000 jules-mcp
-   ```
-
-The server will be accessible at `http://localhost:8000/mcp` and health check at `http://localhost:8000/health`.
-
-## Tools
-
-- `list_sources`: List all available sources connected to Jules.
-- `create_session`: Create a new session with a prompt and source.
-- `list_sessions`: List all sessions.
-- `approve_plan`: Approve the plan for a given session.
-- `list_activities`: List activities in a given session.
-- `send_message`: Send a message to a given session.
-
-## API Reference
-
-See `docs/api.md` for the Jules API documentation.
+Contributions are welcome! Please feel free to submit a pull request.
