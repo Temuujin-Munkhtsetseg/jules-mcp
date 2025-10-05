@@ -44,6 +44,8 @@ The server will be accessible at `http://localhost:8000/mcp` and health check at
 
 ## Tools
 
+The MCP server exposes the following tools to interact with the Jules API:
+
 - `list_sources`: List all available sources connected to Jules.
 - `create_session`: Create a new session with a prompt and source.
 - `list_sessions`: List all sessions.
@@ -51,6 +53,8 @@ The server will be accessible at `http://localhost:8000/mcp` and health check at
 - `list_activities`: List activities in a given session.
 - `send_message`: Send a message to a given session.
 
+For detailed information on the MCP server's tools, see the [MCP Server API Reference](docs/mcp_api.md).
+
 ## API Reference
 
-See `docs/api.md` for the Jules API documentation.
+See `docs/api.md` for the general Jules API documentation.
