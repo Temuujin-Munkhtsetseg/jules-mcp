@@ -12,7 +12,7 @@ To get started with the Jules API, you'll need an API key.
 
 In the Jules web app, go to the Settings page to create a new API key.
 
-![Jules API Key creation interface](placeholder-image)
+![Jules API Key creation interface](images/api-key-placeholder.svg)
 
 ### Use Your API Key
 
