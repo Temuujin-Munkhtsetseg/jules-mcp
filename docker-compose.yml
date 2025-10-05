@@ -1,0 +1,15 @@
+services:
+  app:
+    build: .
+    env_file: .env
+    ports:
+      - "8200:8000"
+    networks:
+      - net
+      - cross-service
+
+networks:
+  net:
+    external: true
+  cross-service:
+    external: true
