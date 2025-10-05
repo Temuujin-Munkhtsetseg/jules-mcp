@@ -1,0 +1,8 @@
+{
+    "mcpServers": {
+        "jules-mcp": {
+            "httpUrl": "http://localhost:8200/mcp",
+            "trust": false
+        }
+    }
+}

@@ -1,0 +1,12 @@
+services:
+  app:
+    image: mcr.microsoft.com/devcontainers/python:3.13
+    volumes:
+      - ..:/workspace:cached
+    networks:
+      - cross-service
+    command: sleep infinity
+
+networks:
+  cross-service:
+    external: true
